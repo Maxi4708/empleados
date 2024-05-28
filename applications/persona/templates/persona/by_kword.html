@@ -1,0 +1,20 @@
+<h1> Buscar Empleados por Palabra Clave </h1>
+
+
+<from method = "GET"> {% csrf_token %}
+    <input type="text" id="kword" name="kword" placeholder = "Ingrese nombre aqui. ">
+    
+    <button type= "submit">Buscar</button>
+</from>
+
+
+<h1>Lista Resultados</h1>
+
+<ul>
+    {% for e in lista %}
+        <li>{{ e }}</li>
+
+    {% endfor %}
+
+
+</ul>

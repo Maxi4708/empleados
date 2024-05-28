@@ -1,0 +1,12 @@
+<h1> Registrar Persona </h1>
+<input type="text" placeholder="Nombres">
+<input type="text" placeholder="Apellidos">
+
+
+<form method = "post"> {% csrf_token %}
+    
+{{ form.as_p }}   <!---  Separa bien el formulario  -->
+<button type= "submit"> Agregar </button>
+
+</form>
+
